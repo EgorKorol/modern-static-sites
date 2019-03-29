@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Современная разработка статических сайтов</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+    </style>
+</head>
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Современная разработка статических сайтов</h1>
+    </header>
+
+    <section class="slide"
+             id="cover">
+        <h2>Современная разработка статических сайтов</h2>
+        <img src="pictures/infrastructure.png"
+             alt="Modern infrastructure delivery content with CDN">
+        <style>
+            #cover {
+                padding-top: 5px;
+            }
+
+            #cover h2 {
+                margin-bottom: 30px;
+                text-align: center;
+                font-size: 60px;
+            }
+
+            #cover img {
+                display: block;
+                margin: 0 auto;
+                height: 30vw;
+            }
+
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Основные функции CMS</h2>
+        <ul>
+            <li>Предоставление инструментов для создания содержимого;</li>
+            <li>Организация совместной работы над содержимым;</li>
+            <li>Управление содержимым;</li>
+            <li>Публикация содержимого;</li>
+            <li>Представление информации в виде, удобном для навигации, поиска.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Принцип работы CMS</h2>
+        <ul>
+            <li>Генерация страниц по запросу;</li>
+            <li>Генерация страниц при редактировании;</li>
+            <li>Смешанный тип.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Основные функции JS-фреймворков</h2>
+        <ul>
+            <li>Возможность выполнять действия на клиенте;</li>
+            <li>Повышение UX;</li>
+            <li>Компонентный подход;</li>
+            <li>Изоляция логики;</li>
+            <li>Легче разрабатывать.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Принцип работы SPA</h2>
+        <ul>
+            <li>Пользователь получает 1 пустую страницу;</li>
+            <li>Все остальное - JS.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>JAM означает JavaScript, API и разметку</h2>
+        <figure>
+            <blockquote>
+                <p>Современная архитектура веб-разработки, основанная на клиентском JavaScript, многократно используемых API и
+                    предварительно созданной разметке</p>
+            </blockquote>
+            <figcaption>Матиас Билманн (генеральный директор и соучредитель Netlify)</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Принцип работы JAMstack</h2>
+        <ul>
+            <li>Создаете фронтенд с помощью JS-фреймворка;</li>
+            <li>Создаете "бэкенд" (контент) с помощью headlessCMS;</li>
+            <li>Связываете фронтенд с api;</li>
+            <li>Настраиваете перегенерацию страниц и деплой.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img class="cover"
+             src="./pictures/headllessCMS.jpeg"
+             alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover"
+             src="./pictures/netlify.png"
+             alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover"
+             src="./pictures/netlify2.png"
+             alt="">
+    </section>
+
+
+    <section class="slide">
+        <h2>Звучит не плохо, но зачем? Есть массы традиционных CMS</h2>
+        <ul>
+            <li> Уязвимость перед хакерскими атаками; </li>
+            <li> При большом наплыве посетителей сервер перестает отвечать; </li>
+            <li> Зачастую низкая скорость сайта; </li>
+            <li> Требует постоянной поддержки и модерирования сервера; </li>
+            <li> Требуются разработчики с специальными знаниями; </li>
+            <li> Сложная разработка. </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Как JAMstack решает эти проблемы?</h2>
+        <ul>
+            <li> CDN. Проблема с сервером решена — он нам больше не нужен. </li>
+            <li> Безопасность. Максимум что можно украсть - html. </li>
+            <li> Скорость сайта. Не надо ничего парсить и вычислять, все уже готово. </li>
+            <li> Опыт и фишки CDN. Оптимизации контента, кэш и др. </li>
+            <li> Никакой цикличной поддержки, бекапов и модерации. Все в git. </li>
+            <li> Простая разработка. Использованиe знакомыx технологии. </li>
+        </ul>
+    </section>
+
+    <section class="slide"
+             id="requirements">
+        <h2>Необходимые знания и умения</h2>
+        <div class="columns two">
+            <div>
+                <h3>PHP-CMS</h3>
+                <ul>
+                    <li>Знание HTML, CSS, JS</li>
+                    <li>Знание платформы</li>
+                    <li>Умение разработки под платформу</li>
+                    <li>Умение настраивать сервер</li>
+                    <li>Умение работать с БД</li>
+                    <li>Знание PHP</li>
+                </ul>
+            </div>
+            <div class="next">
+                <h3>JAMstack</h3>
+                <ul>
+                    <li>Знание HTML, CSS, JS</li>
+                    <li>Умение работать с выбранным JS-фреймворком </li>
+                    <li>Умение работать с выбранной headlessCMS</li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            #requirements h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Рецепт успеха</h2>
+        <ol>
+            <li class="next">Не делать статику на традиционных CMS;</li>
+            <li class="next">Не делать статику только на JS фреймворках;</li>
+            <li class="next">Для редактирования контента использовать headlessCMS;</li>
+            <li class="next">Генерировать страницы заранее;</li>
+            <li class="next">Использовать CDN;</li>
+            <li class="next">Использовать service-worker.</li>
+        </ol>
+    </section>
+
+    <section class="slide"
+             id="see-more">
+        <h2 class="shout"> Спасибо за внимание </h2>
+        <style>
+            #see-more h2 {
+                font-size: 60px
+            }
+
+        </style>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
